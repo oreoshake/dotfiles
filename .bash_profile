@@ -14,7 +14,6 @@ alias be='bundle exec '
 alias gp='git pull'
 alias ll='ls -lah '
 alias gpo='git push origin HEAD'
-source ~/.profile
 source ~/.inputrc
 source ~/.functions
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

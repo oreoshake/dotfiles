@@ -1,0 +1,9 @@
+[user]
+	name = Neil Matatall
+	email = neil.matatall@gmail.com
+[alias]
+        co = checkout
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f

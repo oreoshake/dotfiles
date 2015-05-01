@@ -3,9 +3,9 @@ source ${HOME}/.git-prompt.sh
 export CLICOLOR=1
 export HISTCONTROL=erasedups
 export HISTSIZE=100000
-export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUPSTREAM="auto"
-export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUNTRACKEDFILES=true
 export PS1='[\h \[\033[0;36m\]\W\[\033[0m\]$(__git_ps1 " \[\033[1;32m\](%s)\[\033[0m\]")]\$ '
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 alias bmp='jruby -G -J-Xmn4096m -J-Xms8192m -J-Xmx8192m -J-server bin/brakeman_pro'

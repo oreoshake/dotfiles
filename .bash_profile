@@ -19,4 +19,5 @@ alias gpo='git push origin HEAD'
 source ~/.profile
 source ~/.inputrc
 source ~/.functions
+source ~/dotfiles/.git-completion.bash
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

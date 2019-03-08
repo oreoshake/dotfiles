@@ -16,9 +16,11 @@ alias be='bundle exec '
 alias gp='git pull'
 alias ll='ls -lah '
 alias gpo='git push origin HEAD'
-source ~/.profile
+alias delb='git co master && git pull origin master && git branch --merged| egrep -v "(^\*|master)" | xargs git branch -d'
 source ~/.inputrc
 source ~/.functions
 source ~/dotfiles/.git-completion.bash
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 ssh-add -K ~/.ssh/id_rsa
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

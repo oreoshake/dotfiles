@@ -3,6 +3,7 @@
 	email = oreoshake@users.noreply.github.com
 [alias]
         co = checkout
+	br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:green)%(committerdate:relative)%(color:reset) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname)' 
 [core]
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol

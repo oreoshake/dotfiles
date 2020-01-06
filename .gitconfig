@@ -1,6 +1,7 @@
 [user]
 	name = Neil Matatall
 	email = oreoshake@users.noreply.github.com
+	signingkey = 319E94A77CF2B3C2
 [alias]
         co = checkout
 	br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:green)%(committerdate:relative)%(color:reset) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname)' 
@@ -50,3 +51,8 @@ protocol = https
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+[commit]
+	gpgsign = true
+[gc]
+	auto = 0

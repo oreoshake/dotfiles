@@ -37,6 +37,10 @@ alias ll='ls -lah '
 alias gpo='git push origin HEAD'
 alias delb='git co master && git pull origin master && git branch --merged| egrep -v "(^\*|master)" | xargs git branch -d'
 alias br="git branch | grep \* | cut -d ' ' -f2 | tr -d '\n'"
+alias ob="open https://github.com/github/github/compare/$(br)?expand=1"
+alias pr="open https://github.com/github/github/pull/$(br)"
+alias redo-migration='git checkout master -- db/structure.sql db/ballast-structure.sql && ./script/setup --force ; bin/rake db:migrate db:test:prepare'
+alias branches="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:green)%(committerdate:relative)%(color:reset) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(authorname)'"
 source ~/.inputrc
 source ~/.functions
 source ~/dotfiles/.git-completion.bash

@@ -42,8 +42,6 @@
 [hub]
 protocol = https
 
-[credential]
-	helper = osxkeychain
 [bash]
 	showDirtyState = true
 [filter "lfs"]
